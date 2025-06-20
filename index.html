@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Learn about Seoul, the capital of South Korea. Discover its history, culture, and places to visit.">
+    <meta name="keywords" content="Seoul, South Korea, capital, tourism, history, travel">
+    <title>Explore Seoul - History, Culture, and Travel</title>
 </head>
 
 <body>
@@ -45,24 +48,74 @@
         <!--Video-->
         <section id="video">
             <h2>Video</h2>
-            i<frame width="400" height="225" src="https://www.youtube.com/embed/FKqG4eA5uDI"
-                title="YouTube video about Seoul" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xp8T0cL-Pjw?si=aZH1Cg_9jhgQUEmb"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
     </main>
     <aside>
         <!--Links-->
-        <section>
-
+        <section id="links">
+            <h2>Explore More About Seoul</h2>
+            <ul>
+                <li><a href="https://english.visitseoul.net/" target="_blank" title="Visit Seoul official site">Visit
+                        Seoul</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Seoul" target="_blank"
+                        title="Wikipedia page about Seoul">Wikipedia - Seoul</a></li>
+                <li><a href="https://archive.visitseoul.net/html/eng/index.jsp" target="_blank"
+                        title="seoul Tourism Organization">Seoul
+                        Tourism</a></li>
+            </ul>
         </section>
         <!--Table-->
-        <section>
-
+        <section id="table">
+            <h2>Quick Facts About Seoul</h2>
+            <table border="1">
+                <tr>
+                    <th>Fact</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td>9.6 million</td>
+                </tr>
+                <tr>
+                    <td>Time Zone</td>
+                    <td>KST (Korea Standard Time, UTC+9)</td>
+                </tr>
+                <tr>
+                    <td>Founding Year</td>
+                    <td>1394 - Became the capital of Joseon Dynasty (formerly called Hanyang)</td>
+                </tr>
+            </table>
         </section>
 
         <!--Form-->
-        <section>
+        <section id="form">
+            <h2>Contact Us</h2>
+            <form>
+                <label class="form-label" for="name">Your Name</label><br>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Enter your full name"
+                    required autofocus><br><br>
 
+                <label class="form-label" for="email">Email Address</label><br>
+                <input class="form-control" type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+                <label class="form-label" for="topic">Topic</label><br>
+                <select class="form-control" id="topic" name="topic">
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="culture">Culture</option>
+                </select><br><br>
+
+                <label class="form-label" for="message">Your Message</label><br>
+                <textarea class="form-control" id="message" name="message"
+                    placeholder="Write your message here"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </aside>
     <footer>
