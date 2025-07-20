@@ -1,0 +1,156 @@
+/* Name: Gilsu Song / Student Number: 8966966 */
+
+/* 2) Root Element + Body */
+html {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+
+    background-color: aliceblue;
+    /* Set a background-color for the entire page */
+}
+
+/* 3) Body element */
+body {
+    max-width: 1200px;
+    /* Sets a maximum width for the content */
+    margin: 0 auto;
+    /* Centers the content horizontally */
+    padding: 1.5rem;
+    /* Adds padding inside the body */
+    border: solid 0.1rem solid lightgray;
+    /* Adds a light gray border */
+    background-color: white;
+    /* White background for the content area */
+}
+
+/* 4) Page Layout using Floats */
+main {
+    width: 70%;
+    /* Sets the width of the main content area */
+    float: left;
+    /* Floats the main content to the left */
+    padding: 0 1rem;
+    /* Adds horizontal padding */
+}
+
+aside {
+    width: 30%;
+    /* Sets the width of the sidebar */
+    float: right;
+    /* Floats the sidebar to the right */
+    padding: 0 1rem;
+    /* Adds horizontal padding */
+}
+
+/* 5) Header & Footer Styling */
+header,
+footer {
+    color: white;
+    /* Sets the text color to white */
+    text-align: center;
+    /* Centers the text */
+    padding: 1rem 0;
+    /* Adds vertical padding */
+
+    background: linear-gradient(90deg, RoyalBlue, CornflowerBlue, LightSkyBlue);
+}
+
+header h1 {
+    font-size: 3em;
+    /* Increases the font size of the main heading */
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.8em;
+    /* Decreases the font size of the footer text */
+    margin: 0;
+}
+
+footer {
+    clear: both;
+    /* Ensures the footer is not affected by floated elements */
+}
+
+/* Styling for all section headings */
+h2 {
+    color: RoyalBlue;
+    /* Sets heading color */
+    font-family: 'Georgia', serif;
+    /* Sets a different font for headings */
+    font-weight: bold;
+    /* Makes the font bold */
+    font-style: normal;
+    /* Ensures style is normal */
+    font-variant: small-caps;
+    /* Displays text in small capitals */
+    text-align: center;
+    /* Centers the heading text */
+
+    border-bottom: solid 2px LightSkyBlue;
+    padding-bottom: 0.5rem;
+}
+
+/* 6) Blockquote */
+blockquote {
+    /* Type Selector */
+    font-style: italic;
+    /* Makes the text italic */
+    background-color: whitesmoke;
+    /* Adds a light background color */
+
+    padding: 1rem;
+    /* Adds internal padding */
+
+    border-left: solid 0.5rem CornflowerBlue;
+    /* Adds a distinctive left border */
+
+    width: 80%;
+    /* Sets the width */
+
+    margin: 1.5rem auto;
+    /* Centers the element and adds vertical space */
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+/* 7) Figure + Figcaption + Image */
+#gallery figure {
+    border: solid 0.1rem gainsboro;
+    /* Adds a border */
+    border-radius: 0.5rem;
+    /* Rounds the corners */
+    padding: 1rem;
+    /* Adds padding inside the figure */
+    background-color: whitesmoke;
+    /* Sets a background color */
+    text-align: center;
+}
+
+#gallery img {
+    display: block;
+    /* Makes the image a block element for centering */
+    border: solid 0.2rem lightgray;
+    /* Adds a border to the image */
+    border-radius: 0.5rem;
+    /* Rounds the corners of the image */
+    width: 90%;
+    /* Sets the width relative to its container */
+    max-width: 100%;
+    /* Ensures image is responsive */
+    margin: 0 auto 1rem auto;
+    /* Centers the image and adds bottom margin */
+}
+
+#gallery figcaption {
+    font-size: 0.9em;
+    /* Decreases the font size */
+    font-variant: small-caps;
+    /* Changes the text to small caps */
+    color: dimgray;
+}
