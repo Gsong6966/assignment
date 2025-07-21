@@ -16,64 +16,63 @@ html {
 /* 3) Body element */
 body {
     max-width: 1200px;
-    /* Sets a maximum width for the content */
+    /* Sets a maximum width */
     margin: 0 auto;
     /* Centers the content horizontally */
     padding: 1.5rem;
-    /* Adds padding inside the body */
-    border: solid 0.1rem solid lightgray;
-    /* Adds a light gray border */
+    /* Adds padding */
+    border: solid 0.1rem lightgray;
+    /* Adds border */
     background-color: white;
-    /* White background for the content area */
+    /* Set a background-color for the entire page */
 }
 
 /* 4) Page Layout using Floats */
 main {
     width: 70%;
-    /* Sets the width of the main content area */
+    /* Sets the width of the main */
     float: left;
-    /* Floats the main content to the left */
+    /* Floats the main to the left */
     padding: 0 1rem;
-    /* Adds horizontal padding */
+    /* Adds padding */
 }
 
 aside {
     width: 30%;
-    /* Sets the width of the sidebar */
+    /* Sets the width of the aside */
     float: right;
-    /* Floats the sidebar to the right */
+    /* Floats the aside to the right */
     padding: 0 1rem;
-    /* Adds horizontal padding */
+    /* Adds padding */
 }
 
 /* 5) Header & Footer Styling */
 header,
 footer {
     color: white;
-    /* Sets the text color to white */
+    /* Sets the text color */
     text-align: center;
     /* Centers the text */
     padding: 1rem 0;
-    /* Adds vertical padding */
+    /* Adds padding */
 
     background: linear-gradient(90deg, RoyalBlue, CornflowerBlue, LightSkyBlue);
 }
 
 header h1 {
     font-size: 3em;
-    /* Increases the font size of the main heading */
+    /* Increases the font size of the header */
     margin: 0;
 }
 
 footer p {
     font-size: 0.8em;
-    /* Decreases the font size of the footer text */
+    /* Decreases the font size of the footer */
     margin: 0;
 }
 
 footer {
     clear: both;
-    /* Ensures the footer is not affected by floated elements */
 }
 
 /* Styling for all section headings */
@@ -97,32 +96,26 @@ h2 {
 
 /* 6) Blockquote */
 blockquote {
-    /* Type Selector */
     font-style: italic;
     /* Makes the text italic */
     background-color: whitesmoke;
-    /* Adds a light background color */
-
+    /* Adds background color */
     padding: 1rem;
-    /* Adds internal padding */
-
+    /* Adds padding */
     border-left: solid 0.5rem CornflowerBlue;
-    /* Adds a distinctive left border */
-
+    /* Adds left border */
     width: 80%;
     /* Sets the width */
-
     margin: 1.5rem auto;
-    /* Centers the element and adds vertical space */
-
+    /* Centers  and adds space */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Adds a subtle shadow */
+    /* Adds a subtle box-shadow */
 }
 
 /* 7) Figure + Figcaption + Image */
 #gallery figure {
     border: solid 0.1rem gainsboro;
-    /* Adds a border */
+    /* Adds border */
     border-radius: 0.5rem;
     /* Rounds the corners */
     padding: 1rem;
@@ -134,23 +127,218 @@ blockquote {
 
 #gallery img {
     display: block;
-    /* Makes the image a block element for centering */
+    /* Makes the image a block */
     border: solid 0.2rem lightgray;
-    /* Adds a border to the image */
+    /* Adds border to the image */
     border-radius: 0.5rem;
     /* Rounds the corners of the image */
     width: 90%;
-    /* Sets the width relative to its container */
+    /* Sets the width */
     max-width: 100%;
-    /* Ensures image is responsive */
+    /* Ensures image */
     margin: 0 auto 1rem auto;
-    /* Centers the image and adds bottom margin */
+    /* Centers image and add bottom margin */
 }
 
 #gallery figcaption {
     font-size: 0.9em;
-    /* Decreases the font size */
+    /* Decreases font size */
     font-variant: small-caps;
-    /* Changes the text to small caps */
+    /* Changes text to small caps */
     color: dimgray;
 }
+
+/* 8) iFrame */
+iframe {
+    border: solid 0.2rem lightgray;
+    /* Adds border */
+
+    display: block;
+    /* Makes a block element */
+    margin: 1rem auto;
+    /* Centers the iframe */
+
+    width: 100%;
+    /* Sets the width */
+    max-width: 560px;
+
+    /* Sets a max-width *
+}
+
+/* 9) Quote */
+    #quote {
+        border: solid 0.2rem CornflowerBlue;
+        /* Adds border */
+
+        box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+        /* Adds a shadow */
+
+        width: 80%;
+        /* Decreases the width */
+
+        font-family: 'Times New Roman', Times, serif;
+        /* Changes the font family */
+        font-style: italic;
+        /* Makes the text italic */
+        color: dimgray;
+        /* Changes the text color */
+
+        padding: 1.5rem;
+        /* Adds padding */
+
+        margin: 2rem auto;
+        /* Centers the section and adds space */
+
+        text-align: center;
+    }
+
+    /* 10) List + Links */
+    #links ul {
+        list-style-type: none;
+        /* Removes the default list bullets */
+        padding: 0;
+        /* Removes default padding */
+    }
+
+    a:link {
+        color: RoyalBlue;
+        /* Color for unvisited links */
+        text-decoration: none;
+        /* Removes underline */
+    }
+
+    a:visited {
+        color: purple;
+        /* Color for visited links */
+    }
+
+    a:hover {
+        color: LightSkyBlue;
+        /* Color when mouse is over the link */
+        text-decoration: underline;
+        /* Adds underline on hover */
+    }
+
+    a:active {
+        color: orangered;
+        /* Color when the link is clicked */
+    }
+
+    /* 11) Table */
+    table {
+        width: 100%;
+        /* Makes table full-width */
+        border-collapse: collapse;
+        /* Merges table borders */
+        margin-bottom: 1.5rem;
+        /* Adds space the table */
+    }
+
+    th {
+        text-align: left;
+        /* Aligns header text to the left */
+        font-weight: bold;
+        /* Makes text bold*/
+        font-variant: small-caps;
+        /* Displays text in small caps*/
+        color: white;
+        /* Sets text color to white */
+        background-color: CornflowerBlue;
+        /* Sets the background color */
+    }
+
+    td {
+        padding: 0.75rem;
+        /* Adds padding */
+        border: solid 0.1rem gainsboro;
+        /* Adds a border to cells */
+    }
+
+
+    tr:nth-child(even) {
+        background-color: whitesmoke;
+        /* Sets background for even rows*/
+    }
+
+    tr:hover {
+        background-color: lightblue;
+        /* Changes background color */
+    }
+
+    /* 12) Form */
+    .form-label {
+        font-variant: small-caps;
+        /* Displays text in small caps */
+        font-weight: bold;
+        /* Makes text bold*/
+
+        color: RoyalBlue;
+        /* Sets label color */
+    }
+
+    .form-control {
+        padding: 0.5rem;
+        /* Adds padding inside */
+        border: solid 1px lightgray;
+        /* Adds a border  */
+        border-radius: 0.25rem;
+        /* Rounds the corners  */
+
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea.form-control {
+        min-height: 8rem;
+        /* Sets a minimum height for the textarea */
+        resize: vertical;
+        /* Allows vertical resizing */
+    }
+
+    /* Styles the submit button. */
+    button[type="submit"] {
+        display: block;
+        /* Makes the button a block */
+        width: 100%;
+        /* Makes the button full-width */
+        padding: 0.7rem;
+        /* Adds padding*/
+        border: none;
+        /* Removes default border */
+        border-radius: 0.25rem;
+        /* Rounds corners */
+        background-color: RoyalBlue;
+        /* Set background color */
+        color: white;
+        /* Set text color */
+
+        margin-bottom: 2rem;
+    }
+
+    /* 13) Responsive Design */
+    @media (max-width: 768px) {
+
+        html {
+            font-size: 16px;
+            /* Decrease base font size for smaller screens */
+        }
+
+        main,
+        aside {
+            float: none;
+            /* Removes float property */
+            width: 90%;
+            margin: auto;
+        }
+
+        blockquote,
+        #quote {
+            width: 95%;
+            /* Increase width to fit smaller screen */
+        }
+
+        body {
+            padding: 1rem;
+            /* Adjust padding for smaller screens */
+        }
+    }
